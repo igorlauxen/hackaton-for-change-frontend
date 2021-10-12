@@ -1,0 +1,10 @@
+ <mvc:View controllerName="sap.ui.hackaton.hackaton.controller.MainView"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <App id="idAppControl" >
+    <pages>
+      <mvc:XMLView viewName="sap.ui.hackaton.hackaton.view.FirstPage"/>
+    </pages>
+  </App>
+</mvc:View>

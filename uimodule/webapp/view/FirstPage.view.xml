@@ -1,0 +1,30 @@
+ <mvc:View controllerName="sap.ui.hackaton.hackaton.controller.FirstPage"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <Page title="{i18n>title}">
+    <content>
+      <VBox class="sapUiSmallMargin">
+        <Label text="{i18n>label.explain.type}"/>
+        <Input
+          value="{screenModel>/bindSample}"
+          liveChange="sampleLiveChangeEvent"
+          class="sapUiSmallMarginBottom"/>
+        
+        <Text text="{
+            path: 'screenModel>/bindSample',
+            formatter: '.formatText'
+          }"
+          class="sapUiSmallMarginBottom"/>
+
+        <Button text="{i18n>buttom.sample}" press="samplePressEvent"/>
+      </VBox>
+    </content>
+    <footer>
+      <OverflowToolbar>
+        <ToolbarSpacer/>
+        <Button text="Next" press="toNext"/>
+      </OverflowToolbar>
+    </footer>
+  </Page>
+</mvc:View>
